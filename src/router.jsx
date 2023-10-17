@@ -8,12 +8,15 @@ import UpdateItem from "./pages/items/UpdateItem";
 import Home from "./pages/Home";
 
 const router = createBrowserRouter([{
-  path: "/",
+  path: "/Gestor_de_Estoque/",
   element: <RootLayout />,
   children: [
-    { index: true, element: <Home /> },
     {
-      path: "items",
+      path: "/Gestor_de_Estoque/",
+      element: <Home/>
+    },
+    {
+      path: "/Gestor_de_Estoque/items",
       element: <ItemsLayout />,
       children: [
         { index: true, element: <ListItems /> },

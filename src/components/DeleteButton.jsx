@@ -16,7 +16,7 @@ export default function DeleteButton({ itemId, itemName }){
     const handleDelete = () => {
         if(confirm(`Tem certeza que deseja excluir ${itemName}?`)) {
             deleteItem(itemId)
-            navigate("/items")
+            navigate("/Gestor_de_Estoque/items")
         }
     }
 
