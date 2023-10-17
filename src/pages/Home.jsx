@@ -49,7 +49,7 @@ export default function Home() {
               {recentItems.map((item) => (
                 <tr key={item.id}>
                   <td>{item.name}</td>
-                  <td><Link to={`/items/${item.id}`} className="button is-small">Ver</Link></td>
+                  <td><Link to={`/Gestor_de_Estoque/items/${item.id}`} className="button is-small">Ver</Link></td>
                 </tr>
               ))}
             </tbody>
@@ -69,7 +69,7 @@ export default function Home() {
                 <tr key={item.id}>
                   <td>{item.name}</td>
                   <td>{item.quantity}</td>
-                  <td><Link to={`/items/${item.id}`} className="button is-small">Ver</Link></td>
+                  <td><Link to={`/Gestor_de_Estoque/items/${item.id}`} className="button is-small">Ver</Link></td>
                 </tr>
               ))}
             </tbody>
